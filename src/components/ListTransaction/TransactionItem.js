@@ -22,6 +22,7 @@ const TransactionItem = ({item}) => {
   } = item;
   return (
     <Pressable
+      android_ripple={{color: colors.grey}}
       onPress={() => navigation.navigate('Transaction Detail', {item})}
       style={styles.itemContainer}>
       <View style={styles.leftFlex}>

@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   container: {
     backgroundColor: 'white',
-    padding: 16,
+    paddingVertical: 16,
     borderRadius: 8,
     width: '80%',
   },
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingVertical: 12,
+    paddingHorizontal: 16,
   },
   outerRound: {
     alignItems: 'center',
@@ -66,12 +67,18 @@ const styles = StyleSheet.create({
 
 const ModalItem = ({item, itemChoosed, onPress}) => {
   return (
-    <Pressable onPress={onPress} style={styles.itemContainer}>
+    <Pressable
+      android_ripple={{color: colors.grey}}
+      onPress={onPress}
+      style={styles.itemContainer}>
       <View style={styles.outerRound}>
         <View
           style={[
             styles.insideRound,
-            {backgroundColor: item.title === itemChoosed ? colors.orange : colors.white},
+            {
+              backgroundColor:
+                item.title === itemChoosed ? colors.orange : colors.white,
+            },
           ]}
         />
       </View>

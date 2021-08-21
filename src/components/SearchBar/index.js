@@ -24,7 +24,10 @@ const SearchBar = () => {
           placeholder="Cari nama, bank, atau nominal"
         />
       </View>
-      <Pressable style={styles.rightFlex} onPress={() => _openModal()}>
+      <Pressable
+        android_ripple={{color: colors.grey, borderless: true}}
+        style={styles.rightFlex}
+        onPress={() => _openModal()}>
         <Text style={styles.chooserText}>{filterChoosen}</Text>
         <Entypo
           name="chevron-small-down"
