@@ -31,7 +31,7 @@ const SearchBar = () => {
         <Text style={styles.chooserText}>{filterChoosen}</Text>
         <Entypo
           name="chevron-small-down"
-          size={24}
+          size={20}
           color={colors.orangePale}
           style={styles.chevronDown}
         />
@@ -61,13 +61,13 @@ const styles = StyleSheet.create({
     flex: 2,
   },
   search: {marginRight: 4},
-  textInput: {height: 40, width: '75%'},
+  textInput: {height: 40, width: '90%'},
   rightFlex: {
     flexDirection: 'row',
     alignItems: 'center',
     flex: 1,
     justifyContent: 'flex-end',
   },
-  chooserText: {color: colors.orangePale, fontWeight: 'bold'},
+  chooserText: {color: colors.orangePale, fontWeight: 'bold', fontSize: 10},
   chevronDown: {marginLeft: 4},
 });
