@@ -8,7 +8,7 @@ const ListTransaction = () => {
   const {transactions} = React.useContext(TransactionContext);
   const renderItem = ({item}) => <TransactionItem item={item} />;
   const renderSeparator = () => <View style={styles.separator} />;
-  const renderEmpty = () => <EmptyItem/>
+  const renderEmpty = () => <EmptyItem />;
   return (
     <FlatList
       data={transactions}
@@ -18,6 +18,7 @@ const ListTransaction = () => {
       ListEmptyComponent={renderEmpty}
       contentContainerStyle={styles.list}
       showsVerticalScrollIndicator={false}
+      keyboardShouldPersistTaps="handled"
     />
   );
 };
