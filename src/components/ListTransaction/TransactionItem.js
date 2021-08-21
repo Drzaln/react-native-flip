@@ -68,8 +68,8 @@ const TransactionItem = ({item}) => {
             styles.statusBadge,
             {
               backgroundColor:
-                status === 'SUCCESS' ? colors.green : colors.white,
-              borderColor: status === 'SUCCESS' ? colors.white : colors.orange,
+                status === 'SUCCESS' ? colors.green : 'transparent',
+              borderColor: status === 'SUCCESS' ? 'transparent' : colors.orange,
             },
           ]}>
           <Text
