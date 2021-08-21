@@ -1,13 +1,16 @@
-import { NavigationContainer } from '@react-navigation/native'
-import React from 'react'
-import Route from './src/route'
+import {NavigationContainer} from '@react-navigation/native';
+import React from 'react';
+import {TransactionController} from './src/provider/TransactionProvider';
+import Route from './src/route';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Route/>
-    </NavigationContainer>
-  )
-}
+    <TransactionController>
+      <NavigationContainer>
+        <Route />
+      </NavigationContainer>
+    </TransactionController>
+  );
+};
 
-export default App
+export default App;
