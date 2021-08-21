@@ -22,7 +22,7 @@ const TransactionItem = ({item}) => {
   } = item;
   return (
     <Pressable
-      onPress={() => navigation.navigate('TransactionDetail', {item})}
+      onPress={() => navigation.navigate('Transaction Detail', {item})}
       style={styles.itemContainer}>
       <View style={styles.leftFlex}>
         <View

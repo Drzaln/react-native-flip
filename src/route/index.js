@@ -7,8 +7,8 @@ const Stack = createNativeStackNavigator();
 const Route = () => {
     return (
         <Stack.Navigator initialRouteName="TransactionList">
-            <Stack.Screen name="TransactionList" component={TransactionList} />
-            <Stack.Screen name="TransactionDetail" component={TransactionDetail} />
+            <Stack.Screen name="Transaction List" component={TransactionList} />
+            <Stack.Screen name="Transaction Detail" component={TransactionDetail} />
         </Stack.Navigator>
     )
 }
