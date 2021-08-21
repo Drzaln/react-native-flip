@@ -82,9 +82,18 @@ const formatDateToDMY = date => {
   return `${day} ${month} ${year}`;
 };
 
+const mapObjectToArray = object => {
+  const array = [];
+  for (let key in object) {
+    array.push(object[key]);
+  }
+  return array;
+};
+
 export {
   changeToUpperCase,
   changeToProperCase,
   currencyFormatter,
   formatDateToDMY,
+  mapObjectToArray,
 };
